@@ -2,7 +2,7 @@
 
 <launch>
     <arg name="dual_gripper" default="false"/>
-    <arg name="comport" default="/dev/ttyUSB0"/>
+    <arg name="comport" default="/dev/robotiq"/>
     <arg name="baud" default="115200"/>
     <arg name="run_test" default="false"/>
 	        
