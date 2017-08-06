@@ -1,12 +1,18 @@
-# robotiq_85_gripper
-Common packages for the Robotiq 85 Gripper provided by Stanley Innovation
+# robotiq_140_gripper
+Fork du package Robotiq_85_Gripper fournit par Stanley Innovation.
+Le packet a été modifié pour être utilisé en harmonie avec le paquet [wm_robotiq_hardware_interface](https://github.com/WalkingMachine/wm_robotiq_hardware_interface).
 
-Defaults to 'ttyUSB0' and 115200 baud rate
+### Instalation
+```sh
+cd <your workspace>/src
+git clone git@github.com:WalkingMachine/sara_udev.git
+git clone git@github.com:WalkingMachine/robotiq_140_description.git
+git clone git@github.com:WalkingMachine/robotiq_140_gripper.git
 
-Single gripper and left gripper (in dual gripper configuration) need to be configured as device 9 using the Robotiq User Interface
-Right gripper (in dual gripper configuration) need to be configured as device 9 using the Robotiq User Interface
-
-
-start with:
-roslaunch robotiq_85_bringup robotiq_85.launch run_test:=true
-
+cd <your workspace>
+catkin_make
+```
+### Pour lancer
+```sh
+roslaunch robotiq_85_driver robotiq_85_driver.launch
+```
