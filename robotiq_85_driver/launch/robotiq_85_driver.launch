@@ -2,7 +2,7 @@
 
 <launch>
     <arg name="dual_gripper" default="false"/>
-    <arg name="comport" default="SARA/gripper/robotiq"/>
+    <arg name="comport" default="/dev/SARA/gripper/robotiq"/>
     <arg name="baud" default="115200"/>
     <arg name="run_test" default="false"/>
 	        
